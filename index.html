@@ -1,19 +1,68 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- meta tags, links to css, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Generative Design</title>
+    <title>Coffee Roulette</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
 
     <!-- visible content goes here -->
-	<h1>Generative Design</h1>
-	<p>See README.md for info</p>
+    <main>
+
+        <h1>COFFEE ROULETTE</h1>
+
+        <h2>YOUR COFFEE ORDER IS...</h2>
+
+        <div id="coffee-result">
+
+            <!-- image placeholder: swap this for an <img> later -->
+            <div id="coffee-image" class="image-placeholder"></div>
+
+            <h3 id="coffee-name">Coffee Name</h3>
+
+            <div class="coffee-details">
+
+                <div class="detail">
+                    <h4>SIZE</h4>
+                    <p id="coffee-size">Size</p>
+                </div>
+
+                <div class="detail">
+                    <h4>COFFEE TYPE</h4>
+                    <p id="coffee-type">Coffee Type</p>
+                </div>
+
+                <div class="detail">
+                    <h4>MILK</h4>
+                    <p id="coffee-milk">Milk</p>
+                </div>
+
+                <div class="detail">
+                    <h4>FLAVOR</h4>
+                    <p id="coffee-flavor">Flavor</p>
+                </div>
+
+            </div>
+
+            <button id="generate-button">GENERATE ANOTHER</button>
+
+        </div>
+
+    </main>
 
     <!-- load javascript after the page elements render -->
     <script src="assets/js/main.js"></script>
+
 </body>
 </html>
